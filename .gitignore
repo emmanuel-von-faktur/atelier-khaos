@@ -1,0 +1,8 @@
+node_modules
+attachments
+artifacts
+screenshots
+*.swf
+*.zip
+.vercel
+.tanstack

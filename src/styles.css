@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Fette UNZ Fraktur";
+  src: url("/fonts/FetteUNZFraktur.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --color-bg: #12100e;
+  --color-surface: #1c1916;
+  --color-fg: #f1ebe3;
+  --color-muted: #a39a8f;
+  --color-primary: #c9c2b6;
+  --color-border: #2c2824;
+  --radius: 0.75rem;
+  --font-sans: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
+  --font-display: "Fette UNZ Fraktur", "Old English Text MT", serif;
+}
+
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  html,
+  body,
+  #app {
+    height: 100%;
+    background: var(--color-bg);
+    color: var(--color-fg);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
